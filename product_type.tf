@@ -5,18 +5,6 @@ resource "commercetools_product_type" "my-product-type5" {
 
 
   attribute {
-    name = "previous_model"
-    label = {
-      en = "Previous model"
-      nl = "Vorig model"
-    }
-    type {
-      name              = "reference"
-      reference_type_id = "product"
-    }
-  }
-
-  attribute {
     name = "some-flag"
     label = {
       en = "Some flag"
