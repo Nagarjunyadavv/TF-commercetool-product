@@ -23,6 +23,36 @@ resource "commercetools_product_type" "my-product-type5" {
       }
     }
   }
+  attribute {
+    name = "lens_product_no"
+    label = {
+      en = "Lens product number"
+      nl = "Objectief productnummer"
+    }
+    required = true
+    type {
+      name = "text"
+    }
+    constraint = "Unique"
+    input_tip = {
+      en = "Enter the product code"
+      nl = "Voer de product code in"
+    }
+    searchable = true
+  }
+
+  attribute {
+    name = "previous_model"
+    label = {
+      en = "Previous model"
+      nl = "Vorig model"
+    }
+    type {
+      name              = "reference"
+      reference_type_id = "product"
+    }
+  }
+
 
   attribute {
     name = "origin"
