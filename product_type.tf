@@ -3,17 +3,17 @@ resource "commercetools_product_type" "my-product-type4" {
   name        = "Lens specification4"
   description = "All the specific info concerning the lens"
 
-  attribute {
-    name = "autofocus"
-    label = {
-      en = "Has autofocus"
-      nl = "Heeft autofocus"
-    }
-    required = true
-    type {
-      name = "boolean"
-    }
-  }
+#  attribute {
+#    name = "autofocus"
+#    label = {
+#      en = "Has autofocus"
+#      nl = "Heeft autofocus"
+#    }
+#    required = true
+#    type {
+#      name = "boolean"
+#    }
+# }
 
   attribute {
     name = "lens_product_no"
